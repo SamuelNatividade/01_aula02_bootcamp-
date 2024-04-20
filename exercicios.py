@@ -93,11 +93,13 @@ print(f'Resultado logico de {bool_1} or {bool_2} é {resultado}')
 bool_1 = True 
 bool_1_inverso = not bool_1
 print(bool_1_inverso)
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 numero_1 = int(input('Digite o primeiro numero: '))
 numero_2 = int(input('Digite o primeiro numero: '))
 resultado = (numero_1 == numero_2)
 print(f'Os numeros fornecidos sao iguais? {resultado}')
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 numero_1 = int(input('Digite o primeiro numero: '))
 numero_2 = int(input('Digite o primeiro numero: '))
