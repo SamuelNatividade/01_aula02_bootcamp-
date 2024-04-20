@@ -18,11 +18,15 @@
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-numero_1 = int(input("Digite o primeiro numero: "))
-numero_2 = int(input("Digite o segundo numero: "))
-print(numero_1 + numero_2)
+# numero_1 = int(input("Digite o primeiro numero: "))
+# numero_2 = int(input("Digite o segundo numero: "))
+# print(numero_1 + numero_2)
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
+numero_1 = int(input("Digite um número: "))
+resto = numero_1 % 5
+print(f"O resto da divisao do numero {numero_1} por 5 é  {resto}")
+
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 # numero_01 = int(input('Inserir um numero inteiro:'))
