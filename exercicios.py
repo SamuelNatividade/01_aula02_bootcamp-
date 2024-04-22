@@ -108,7 +108,70 @@ print(f'Os numeros fornecidos sao iguais? {resultado}')
 # #### try-except e if
 
 # 21: Conversor de Temperatura
-# 22: Verificador de Palíndromo
-# 23: Calculadora Simples
-# 24: Classificador de Números
-# 25: Conversão de Tipo com Validação
+try:
+    celsius = float(input('Digite uma temperatura: '))
+    fahrenheit = (celsius * 9/5) + 32
+    print(f'A temperatura {celsius} C equivale a {fahrenheit} em fahrenheit')
+except ValueError:
+    print('Digite um valor numerico.')
+
+# # 22: Verificador de Palíndromo
+entrada = input("Digite uma palavra ou frase: ")
+if isinstance(entrada, str):
+    formatado = entrada.replace(" ", "").lower()
+    if formatado == formatado[::-1]:
+        print("É um palíndromo.")
+    else:
+        print("Não é um palíndromo.")
+else:
+    print("Entrada inválida. Por favor, digite uma palavra ou frase.")
+
+
+# # 23: Calculadora Simples
+try:
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    operador = input("Digite o operador (+, -, *, /): ")
+    if operador == '+':
+        resultado = num1 + num2
+    elif operador == '-':
+        resultado = num1 - num2
+    elif operador == '*':
+        resultado = num1 * num2
+    elif operador == '/' and num2 != 0:
+        resultado = num1 / num2
+    else:
+        print("Operador inválido ou divisão por zero.")
+    print("Resultado:", resultado)
+except ValueError:
+    print("Erro: Entrada inválida. Certifique-se de inserir números.")
+# # 24: Classificador de Números
+try:
+    numero = int(input("Digite um número: "))
+    if numero > 0:
+        print("Positivo")
+    elif numero < 0:
+        print("Negativo")
+    else:
+        print("Zero")
+    if numero % 2 == 0:
+        print("Par")
+    else:
+        print("Ímpar")
+except ValueError:
+    print("Por favor, digite um número inteiro válido.")
+# # 25: Conversão de Tipo com Validação
+try:
+    numero = int(input("Digite um número: "))
+    if numero > 0:
+        print("Positivo")
+    elif numero < 0:
+        print("Negativo")
+    else:
+        print("Zero")
+    if numero % 2 == 0:
+        print("Par")
+    else:
+        print("Ímpar")
+except ValueError:
+    print("Por favor, digite um número inteiro válido.")
